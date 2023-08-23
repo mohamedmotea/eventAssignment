@@ -1,0 +1,152 @@
+:root{
+    --mainColor:#0075FF;
+    --hoColor:#D62E33;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background-image: url("../img/desktop-wallpaper-pics-music-fans-night-club-party-background.jpg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+header .header-content h2 {
+    color:var(--mainColor)
+}
+
+#sidebar {
+    background-color: #000;
+    height: 100vh;
+    width: 300px;
+    position: absolute;
+    left: -300px;
+    transition: left .5s;
+    -webkit-transition: left .5s;
+    -moz-transition: left .5s;
+    -ms-transition: left .5s;
+    -o-transition: left .5s;
+    z-index: 99;
+}
+
+#sidebar .option a {
+    color:#fff;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+#sidebar .option a:hover {
+    color:#0075FF
+}
+#sidebar .btn-option {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+#closeMark {
+    color:#fff;
+    transition:color .3s;
+    -webkit-transition:color .3s;
+    -moz-transition:color .3s;
+    -ms-transition:color .3s;
+    -o-transition:color .3s;
+}
+#closeMark:hover {
+    color:var(--mainColor)
+}
+
+/* Singer Section */
+
+.singer .box {
+
+    text-align: center;
+    
+}
+.singer .box h2 {
+    background-color: var(--mainColor);
+    margin: 0;
+    padding: 0;
+    
+}
+.singer .box p {
+    background-color: rgba(0,0,0,.2);
+    display: none;
+    margin: 0;
+    
+  
+}
+
+.counter {
+   background-image: url("../img/new\ year.webp");
+   background-position: center center;
+   background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.counter::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0,0,0,.5);
+    z-index: -1;
+}
+.counter .box {
+    border: 1px solid #fff;
+    text-align: center;
+    height: 100%;
+    color:#fff
+}
+.counter .box h2 {
+    height: 80%;
+}
+.counter .box span {
+    border-top: 1px;
+    border-top-color: #fff;
+    border-top-style: solid;
+    padding: 10px 0;
+    font-weight: bold;
+    display: block;
+}
+
+.contact .links ul li {
+    padding: 10px;
+    border: 1px solid #999;
+    color:#666;
+    transition:background .3s , color .3s;
+    -webkit-transition:background .3s , color .3s;
+    -moz-transition:background .3s , color .3s;
+    -ms-transition:background .3s , color .3s;
+    -o-transition:background .3s , color .3s;
+}
+.contact .links ul li:hover {
+    background-color: #D62E33;
+    color:#fff;
+    border: 1px solid transparent;
+}
+.contact input::placeholder,
+.contact textarea::placeholder{
+    color:#777
+}
+.contact textarea{
+    min-height: 200px;
+    max-height: 250px;
+    resize: vertical;
+}
+.contact .submit {
+    background-color: var(--hoColor);
+
+}
